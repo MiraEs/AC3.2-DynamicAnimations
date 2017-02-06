@@ -12,6 +12,9 @@
 		14C6F3041E3A6732001406B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C6F3021E3A6732001406B6 /* Main.storyboard */; };
 		14C6F3061E3A6732001406B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C6F3051E3A6732001406B6 /* Assets.xcassets */; };
 		14C6F3091E3A6732001406B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C6F3071E3A6732001406B6 /* LaunchScreen.storyboard */; };
+		E3B2B79F1E44065700448043 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2B79E1E44065700448043 /* Test.swift */; };
+		E3F0557F1E42606200F67989 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F0557E1E42606200F67989 /* Utility.swift */; };
+		E3F055811E4260A500F67989 /* TouchAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F055801E4260A500F67989 /* TouchAnimatorViewController.swift */; };
 		EF2DC6F15C388D7BCE161259 /* Pods_DynamicAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642AC9FC6612752B8BC24742 /* Pods_DynamicAnimations.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		5A664D6E98E3469038D4A647 /* Pods-DynamicAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicAnimations/Pods-DynamicAnimations.debug.xcconfig"; sourceTree = "<group>"; };
 		642AC9FC6612752B8BC24742 /* Pods_DynamicAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C518282A1B18E4539163F1 /* Pods-DynamicAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicAnimations/Pods-DynamicAnimations.release.xcconfig"; sourceTree = "<group>"; };
+		E3B2B79E1E44065700448043 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		E3F0557E1E42606200F67989 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		E3F055801E4260A500F67989 /* TouchAnimatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchAnimatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				14C6F2FE1E3A6732001406B6 /* AppDelegate.swift */,
+				E3F0557E1E42606200F67989 /* Utility.swift */,
+				E3F055801E4260A500F67989 /* TouchAnimatorViewController.swift */,
 				14C6F3001E3A6732001406B6 /* ViewController.swift */,
+				E3B2B79E1E44065700448043 /* Test.swift */,
 				14C6F3021E3A6732001406B6 /* Main.storyboard */,
 				14C6F3051E3A6732001406B6 /* Assets.xcassets */,
 				14C6F3071E3A6732001406B6 /* LaunchScreen.storyboard */,
@@ -123,7 +132,7 @@
 				TargetAttributes = {
 					14C6F2FA1E3A6732001406B6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3457AE227Q;
+						DevelopmentTeam = 9QMWUGNK5F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -212,6 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F055811E4260A500F67989 /* TouchAnimatorViewController.swift in Sources */,
+				E3F0557F1E42606200F67989 /* Utility.swift in Sources */,
+				E3B2B79F1E44065700448043 /* Test.swift in Sources */,
 				14C6F3011E3A6732001406B6 /* ViewController.swift in Sources */,
 				14C6F2FF1E3A6732001406B6 /* AppDelegate.swift in Sources */,
 			);
@@ -335,10 +347,11 @@
 			baseConfigurationReference = 5A664D6E98E3469038D4A647 /* Pods-DynamicAnimations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3457AE227Q;
+				DEVELOPMENT_TEAM = 9QMWUGNK5F;
 				INFOPLIST_FILE = DynamicAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nyc.accessCode.DynamicAnimations;
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.mira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -349,10 +362,11 @@
 			baseConfigurationReference = E0C518282A1B18E4539163F1 /* Pods-DynamicAnimations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3457AE227Q;
+				DEVELOPMENT_TEAM = 9QMWUGNK5F;
 				INFOPLIST_FILE = DynamicAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nyc.accessCode.DynamicAnimations;
+				PRODUCT_BUNDLE_IDENTIFIER = nyc.mira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -377,6 +391,7 @@
 				14C6F30F1E3A6732001406B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
